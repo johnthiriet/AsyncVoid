@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:AsyncVoid" x:Class="AsyncVoid.MainPage">
+    <Grid>
+        <Label x:Name="myLabel" Text="Welcome to Xam Coffee!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <ActivityIndicator x:Name="activityIndicator" Color="Red" HorizontalOptions="Center" VerticalOptions="Center" IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" />
+        <Button Text="Give me coffee !" Command="{Binding Submit}" VerticalOptions="End" />
+    </Grid>
+</ContentPage>
